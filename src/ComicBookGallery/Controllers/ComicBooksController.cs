@@ -6,12 +6,17 @@ using System.Web.Mvc;
 
 namespace ComicBookGallery.Controllers
 {
-    public class ComicBooksController : Controller
-    {
-        // GET: ComicBooks
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
+	public class ComicBooksController : Controller
+	{
+		// GET: ComicBooks
+		public ActionResult Index()
+		{
+			return View();
+		}
+
+		public string Detail()
+		{
+			return "hello from comic books controller";
+		}
+	}
 }
