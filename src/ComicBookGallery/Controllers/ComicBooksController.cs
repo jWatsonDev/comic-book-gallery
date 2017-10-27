@@ -14,6 +14,13 @@ namespace ComicBookGallery.Controllers
 			return View();
 		}
 
+		public ActionResult Test()
+		{
+			ViewBag.FirstName = "Jay";
+			ViewBag.FavFood = "steak";
+			return View();
+		}
+
 		public ActionResult Detail()
 		{
 			ViewBag.SeriesTitle = "The Amazing Spider-Man";
