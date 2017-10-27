@@ -6,17 +6,17 @@ using System.Web.Mvc;
 
 namespace ComicBookGallery.Controllers
 {
-    public class TestTestController : Controller
-    {
-        // GET: TestTest
-        public ActionResult Index()
-        {
-            return View();
-        }
+	public class TestTestController : Controller
+	{
+		// GET: TestTest
+		public ActionResult Index()
+		{
+			return View();
+		}
 
-	    public string BeTest()
-	    {
-		    return "this is a test";
-	    }
-    }
+		public string BeTest()
+		{
+			return "this is a test";
+		}
+	}
 }
