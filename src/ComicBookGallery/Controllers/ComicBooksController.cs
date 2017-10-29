@@ -17,13 +17,6 @@ namespace ComicBookGallery.Controllers
 			_comicBookRepository = new ComicBookRepository();
 		}
 
-
-		// GET: ComicBooks
-		public ActionResult Index()
-		{
-			return View();
-		}
-
 		public ActionResult Test()
 		{
 			ViewBag.FirstName = "Jay";
@@ -42,6 +35,12 @@ namespace ComicBookGallery.Controllers
 
 			return View(comicBook);
 
+		}
+
+		public ActionResult Index()
+		{
+			var comicBooks = _comicBookRepository.GetComicBooks();
+			return View(comicBooks);
 		}
 	}
 }
